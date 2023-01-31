@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <style>
+      body {
+	    background-color: powderblue;
+	    color:black;
+	  }
+      h1 {
+	    color: blue;
+      }
+      img {
+	    position: absolute;
+		top:0;
+		left:0;
+	    width: 40%;
+	  }
+    </style>
+    <title>Unser Besuch bei Agfa</title>
+	<script>
+      function move(element) {
+        element.style.top=Math.random()*60 + "%";
+		element.style.left= Math.random()*60 + "%";
+      }
+	  
+	  function catched(element) {
+         document.body.style.backgroundImage = "url('bg.gif')";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Unser Besuch bei Agfa</h1>
+    Bei unserem Besuch bei Agfa haben wir uns Röntgen und Computertomographien angesehen.
+	
+	<br /><br />
+	
+	Und wir haben eine eigene Website gebastelt mit einem kleinen Spiel!
+	
+	<img src="ct.jpg" onclick="catched(this)" onmousemove="move(this)" />
+  </body>
+</html>
