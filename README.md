@@ -1,2 +1,0 @@
-# wirbeiagfa.github.io
-Website
