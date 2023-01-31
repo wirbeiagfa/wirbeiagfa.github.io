@@ -17,10 +17,13 @@
     </style>
     <title>Unser Besuch bei Agfa</title>
 	<script>
-      function move(element) {
+     width=40;
+	 function move(element) {
         element.style.top=Math.random()*60 + "%";
 		element.style.left= Math.random()*60 + "%";
-      }
+        width=width*0.99;
+  	    element.style.width=width+"%";
+	}
 	  
 	  function catched(element) {
          document.body.style.backgroundImage = "url('bg.gif')";
